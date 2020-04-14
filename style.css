@@ -1,0 +1,62 @@
+.mainheader{
+    background-color:#333;
+    text-align:center;
+    height:4em;
+    color:white;
+}
+.container-top{
+    background-color:#4863A0;
+    color:white;
+}
+.content{
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    
+    font-size:20px;
+}
+
+.container-bottom{
+    padding: 10px;
+}
+/*wrap this insideof another div so I can center all the cards in the midd*/
+.allcards{
+  display:flex;
+  flex-wrap: wrap; /*Important flex-direction: column then center the column to the middle.*/
+  width: 1200px;
+  margin: auto;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    width:300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin:20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container 
+  .container {
+    padding: 2px 16px;
+  }*/
+
+  @media (max-width: 1200px){
+    .allcards{
+      float:left;
+
+      width: 100%;
+      margin: auto;
+    }
+
+    .card{
+      float: left;
+      width:30%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin:20px;
+    }
+  }
